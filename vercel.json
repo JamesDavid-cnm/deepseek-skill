@@ -1,11 +1,15 @@
-cat > vercel.json << 'EOF'
 {
   "version": 2,
   "builds": [
-    { "src": "api/aligenie.py", "use": "@vercel/python" }
+    {
+      "src": "api/aligenie.py",
+      "use": "@vercel/python"
+    }
   ],
   "routes": [
-    { "src": "/api/aligenie", "dest": "api/aligenie.py" }
+    {
+      "src": "/api/aligenie",
+      "dest": "api/aligenie.py"
+    }
   ]
 }
-EOF
